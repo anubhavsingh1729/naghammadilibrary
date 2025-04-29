@@ -1,0 +1,6 @@
+.compare-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #a77011;
+}
