@@ -4,7 +4,6 @@ import "./App.css"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Home from './components/Home'
-import CompareText from './components/CompareText'
 import BookText from './components/Booktext'
 import GraphViewer from './components/graph'
 
