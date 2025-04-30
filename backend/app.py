@@ -49,7 +49,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/home")
+@app.get("/home/")
 def home():
     file_list = os.listdir("data/gnostic_texts")
     txt_file = sorted([f.split('.')[0].strip() for f in file_list if f.endswith('.txt')])
