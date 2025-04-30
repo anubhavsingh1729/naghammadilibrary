@@ -43,13 +43,13 @@ Base.metadata.create_all(bind=engine)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allow access from frontend. For production, restrict this to your frontend’s domain.
+    allow_origins=["https://the-naghammadi-library.onrender.com"],  # allow access from frontend. For production, restrict this to your frontend’s domain.
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-@app.get("/home/")
+@app.get("/home")
 def home():
     file_list = os.listdir("data/gnostic_texts")
     txt_file = sorted([f.split('.')[0].strip() for f in file_list if f.endswith('.txt')])
