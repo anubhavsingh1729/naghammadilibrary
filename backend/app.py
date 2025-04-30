@@ -15,6 +15,7 @@ from sqlalchemy.orm import Session
 
 app = FastAPI()
 
+
 with open("data/gnostic_chunks.json","r") as f:
     gnostic = json.load(f)
 
